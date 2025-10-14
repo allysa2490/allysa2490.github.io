@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #bbf7d0, #d9f99d);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2937;
+  padding: 30px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #15803d; /* dark green accent */
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #4b5563;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(22, 163, 74, 0.15);
+}
+
+.card h2 {
+  color: #16a34a; /* medium green */
+  margin-bottom: 10px;
+}
+
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.hobby {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(22, 163, 74, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  font-weight: 600;
+  color: #15803d;
+  transition: all 0.3s ease;
+}
+
+.hobby:hover {
+  background: #16a34a;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(22, 163, 74, 0.25);
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #4b5563;
+  opacity: 0.8;
+}
